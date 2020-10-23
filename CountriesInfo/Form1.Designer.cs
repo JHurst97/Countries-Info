@@ -33,6 +33,9 @@
             this.flagPB = new System.Windows.Forms.PictureBox();
             this.titleLbl = new System.Windows.Forms.Label();
             this.listView = new System.Windows.Forms.ListView();
+            this.zxc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.qwe = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.asd = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.flagPB)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,7 +43,7 @@
             // 
             this.countriesCB.DisplayMember = "sdf";
             this.countriesCB.FormattingEnabled = true;
-            this.countriesCB.Location = new System.Drawing.Point(425, 59);
+            this.countriesCB.Location = new System.Drawing.Point(425, 43);
             this.countriesCB.Name = "countriesCB";
             this.countriesCB.Size = new System.Drawing.Size(232, 21);
             this.countriesCB.Sorted = true;
@@ -50,7 +53,7 @@
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(663, 57);
+            this.updateBtn.Location = new System.Drawing.Point(663, 41);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(75, 23);
             this.updateBtn.TabIndex = 1;
@@ -61,9 +64,9 @@
             // flagPB
             // 
             this.flagPB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flagPB.Location = new System.Drawing.Point(425, 86);
+            this.flagPB.Location = new System.Drawing.Point(425, 70);
             this.flagPB.Name = "flagPB";
-            this.flagPB.Size = new System.Drawing.Size(456, 352);
+            this.flagPB.Size = new System.Drawing.Size(456, 368);
             this.flagPB.TabIndex = 3;
             this.flagPB.TabStop = false;
             // 
@@ -79,12 +82,34 @@
             // 
             // listView
             // 
+            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.zxc,
+            this.qwe,
+            this.asd});
+            this.listView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.listView.HideSelection = false;
-            this.listView.Location = new System.Drawing.Point(12, 86);
+            this.listView.Location = new System.Drawing.Point(18, 43);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(407, 352);
+            this.listView.Size = new System.Drawing.Size(401, 395);
             this.listView.TabIndex = 5;
             this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.View = System.Windows.Forms.View.Details;
+            // 
+            // zxc
+            // 
+            this.zxc.Text = "qwer";
+            this.zxc.Width = 0;
+            // 
+            // qwe
+            // 
+            this.qwe.Text = "asdf";
+            this.qwe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.qwe.Width = 200;
+            // 
+            // asd
+            // 
+            this.asd.Text = "zxcv";
+            this.asd.Width = 200;
             // 
             // Form1
             // 
@@ -112,6 +137,9 @@
         private System.Windows.Forms.PictureBox flagPB;
         private System.Windows.Forms.Label titleLbl;
         private System.Windows.Forms.ListView listView;
+        private System.Windows.Forms.ColumnHeader qwe;
+        private System.Windows.Forms.ColumnHeader zxc;
+        private System.Windows.Forms.ColumnHeader asd;
     }
 }
 

@@ -32,6 +32,7 @@ namespace CountriesInfo
             {
                 countriesCB.Items.Add(c.Name);
             }
+
         }
 
         List<CountryModel> fullList;
@@ -48,11 +49,20 @@ namespace CountriesInfo
                 }
             }
             //set flag.
-            flagPB.Image = LoadImage(fullList[currCountry].Flag);s
+            flagPB.Image = LoadImage(fullList[currCountry].Flag);
             //set title.
             titleLbl.Text = fullList[currCountry].Name;
             //set capital
-            listView.Items.Add(fullList[currCountry].Capital);
+            ListViewItem capital = new ListViewItem();
+            capital.SubItems.Add("Capital:");
+            capital.SubItems.Add(fullList[currCountry].Capital);
+            listView.Items.Add(capital);
+            //set ISO-3166.
+            ListViewItem alpha3Code = new ListViewItem(); 
+            alpha3Code.SubItems.Add("ISO-3166 code:");
+            alpha3Code.SubItems.Add(fullList[currCountry].Alpha3Code);
+            listView.Items.Add(alpha3Code);
+
         }
 
         public Image LoadImage(string url)
