@@ -48,7 +48,7 @@ namespace CountriesInfo
                 }
             }
             //set flag.
-            flagPB.Image = LoadImage(fullList[currCountry].Flag);
+            flagPB.Image = LoadImage(fullList[currCountry].Flag);s
             //set title.
             titleLbl.Text = fullList[currCountry].Name;
             //set capital
